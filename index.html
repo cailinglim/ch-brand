@@ -10,13 +10,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --primary: #3D72E8; --primary-dark: #2D5EC7; --primary-light: #EBF2FF;
-  --accent: #E07820; --accent-light: #FFF3E0;
-  --green: #2E7D32; --green-light: #E8F5E9;
-  --red: #E53935; --red-light: #FFEBEE;
-  --purple: #6B46C1; --purple-light: #F3E8FF;
-  --teal: #00796B; --teal-light: #E0F2F1;
-  --text: #2C2C3E; --muted: #6B7280; --bg: #F2F2F5;
-  --border: #D0D8EE; --white: #FFFFFF;
+  --accent: #E07820; --accent-light: #FFF3E8;
+  --green: #2DAF7B; --green-light: #E6F9F2;
+  --red: #E84B3D; --red-light: #FEF0EF;
+  --purple: #7B5EA7; --purple-light: #F0EBF8;
+  --teal: #1A9FAF; --teal-light: #E5F6F8;
+  --text: #1A2233; --muted: #6B7A99; --bg: #F4F6FB;
+  --border: #DDE3F0; --white: #FFFFFF;
 }
 body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text); font-size: 14px; line-height: 1.6; }
 .page-wrap { display: flex; min-height: 100vh; }
@@ -131,8 +131,8 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
 
 /* ── DO / DON'T ── */
 .dd-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:16px; }
-.do-box  { border-radius:12px; padding:18px; border:1.5px solid #C8E6C9; background:#F1F8E9; }
-.dont-box{ border-radius:12px; padding:18px; border:1.5px solid #FFCDD2; background:#FFF3F3; }
+.do-box  { border-radius:12px; padding:18px; border:1.5px solid #B2DFCE; background:#F1F8E9; }
+.dont-box{ border-radius:12px; padding:18px; border:1.5px solid #FBBBB7; background:#FFF3F3; }
 .dd-title { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; display:flex; align-items:center; gap:6px; }
 .dd-item { font-size:13px; margin-bottom:7px; padding-left:14px; position:relative; line-height:1.5; }
 .dd-item::before { content:'•'; position:absolute; left:3px; }
@@ -163,7 +163,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
 
 /* Admin frame */
 .admin-frame { background:#fff; border-radius:16px; border:1px solid var(--border); overflow:hidden; box-shadow:0 8px 32px rgba(61,114,232,.1); }
-.admin-chrome { background:#F2F2F5; border-bottom:1px solid var(--border); padding:8px 14px; display:flex; align-items:center; gap:6px; }
+.admin-chrome { background:#F4F6FB; border-bottom:1px solid var(--border); padding:8px 14px; display:flex; align-items:center; gap:6px; }
 .admin-dot { width:8px; height:8px; border-radius:50%; }
 .admin-url { background:#fff; border:1px solid var(--border); border-radius:5px; padding:3px 10px; font-size:10px; color:var(--muted); margin-left:8px; flex:1; }
 .admin-body { display:flex; min-height:300px; }
@@ -292,30 +292,30 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     <div class="swatches">
       <div class="swatch"><div class="swatch-color" style="background:#3D72E8"></div><div class="swatch-name">Primary</div><div class="swatch-hex">#3D72E8</div><div class="swatch-use">Buttons, links, active states</div></div>
       <div class="swatch"><div class="swatch-color" style="background:#2D5EC7"></div><div class="swatch-name">Primary Dark</div><div class="swatch-hex">#2D5EC7</div><div class="swatch-use">Hover &amp; pressed states</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#EBF2FF;border:1px solid #D0D8EE"></div><div class="swatch-name">Primary Light</div><div class="swatch-hex">#EBF2FF</div><div class="swatch-use">Active nav bg, chips, row highlight</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#EBF2FF;border:1px solid #DDE3F0"></div><div class="swatch-name">Primary Light</div><div class="swatch-hex">#EBF2FF</div><div class="swatch-use">Active nav bg, chips, row highlight</div></div>
     </div>
     <div class="sg-label">Accent</div>
     <div class="swatches">
       <div class="swatch"><div class="swatch-color" style="background:#E07820"></div><div class="swatch-name">Accent</div><div class="swatch-hex">#E07820</div><div class="swatch-use">Rewards, points, highlights</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#FFF3E0;border:1px solid #FFE0B2"></div><div class="swatch-name">Accent Light</div><div class="swatch-hex">#FFF3E0</div><div class="swatch-use">Accent badge backgrounds</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#FFF3E8;border:1px solid #FFE0B2"></div><div class="swatch-name">Accent Light</div><div class="swatch-hex">#FFF3E8</div><div class="swatch-use">Accent badge backgrounds</div></div>
     </div>
     <div class="sg-label">Semantic</div>
     <div class="swatches">
-      <div class="swatch"><div class="swatch-color" style="background:#2E7D32"></div><div class="swatch-name">Success</div><div class="swatch-hex">#2E7D32</div><div class="swatch-use">Confirmed, completed</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#E8F5E9;border:1px solid #C8E6C9"></div><div class="swatch-name">Success Light</div><div class="swatch-hex">#E8F5E9</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#E53935"></div><div class="swatch-name">Danger</div><div class="swatch-hex">#E53935</div><div class="swatch-use">Errors, alerts, destructive</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#FFEBEE;border:1px solid #FFCDD2"></div><div class="swatch-name">Danger Light</div><div class="swatch-hex">#FFEBEE</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#6B46C1"></div><div class="swatch-name">Purple</div><div class="swatch-hex">#6B46C1</div><div class="swatch-use">AI, Ava, engagement</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#F3E8FF;border:1px solid #E9D5FF"></div><div class="swatch-name">Purple Light</div><div class="swatch-hex">#F3E8FF</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#00796B"></div><div class="swatch-name">Teal</div><div class="swatch-hex">#00796B</div><div class="swatch-use">Health data, clinical</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#E0F2F1;border:1px solid #B2DFDB"></div><div class="swatch-name">Teal Light</div><div class="swatch-hex">#E0F2F1</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2DAF7B"></div><div class="swatch-name">Success</div><div class="swatch-hex">#2DAF7B</div><div class="swatch-use">Confirmed, completed</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E6F9F2;border:1px solid #B2DFCE"></div><div class="swatch-name">Success Light</div><div class="swatch-hex">#E6F9F2</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E84B3D"></div><div class="swatch-name">Danger</div><div class="swatch-hex">#E84B3D</div><div class="swatch-use">Errors, alerts, destructive</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#FEF0EF;border:1px solid #FBBBB7"></div><div class="swatch-name">Danger Light</div><div class="swatch-hex">#FEF0EF</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#7B5EA7"></div><div class="swatch-name">Purple</div><div class="swatch-hex">#7B5EA7</div><div class="swatch-use">AI, Ava, engagement</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F0EBF8;border:1px solid #DDD0F0"></div><div class="swatch-name">Purple Light</div><div class="swatch-hex">#F0EBF8</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1A9FAF"></div><div class="swatch-name">Teal</div><div class="swatch-hex">#1A9FAF</div><div class="swatch-use">Health data, clinical</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E5F6F8;border:1px solid #9FD6DC"></div><div class="swatch-name">Teal Light</div><div class="swatch-hex">#E5F6F8</div></div>
     </div>
     <div class="sg-label">Neutral</div>
     <div class="swatches">
-      <div class="swatch"><div class="swatch-color" style="background:#2C2C3E"></div><div class="swatch-name">Text</div><div class="swatch-hex">#2C2C3E</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#6B7280;border:1px solid #e5e7eb"></div><div class="swatch-name">Muted</div><div class="swatch-hex">#6B7280</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#F2F2F5;border:1px solid #E0E0E8"></div><div class="swatch-name">Background</div><div class="swatch-hex">#F2F2F5</div></div>
-      <div class="swatch"><div class="swatch-color" style="background:#D0D8EE;border:1px solid #C0C8DE"></div><div class="swatch-name">Border</div><div class="swatch-hex">#D0D8EE</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1A2233"></div><div class="swatch-name">Text</div><div class="swatch-hex">#1A2233</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6B7A99;border:1px solid #e5e7eb"></div><div class="swatch-name">Muted</div><div class="swatch-hex">#6B7A99</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F4F6FB;border:1px solid #E0E0E8"></div><div class="swatch-name">Background</div><div class="swatch-hex">#F4F6FB</div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#DDE3F0;border:1px solid #C0C8DE"></div><div class="swatch-name">Border</div><div class="swatch-hex">#DDE3F0</div></div>
       <div class="swatch"><div class="swatch-color" style="background:#FFFFFF;border:1px solid #e0e0e0"></div><div class="swatch-name">White</div><div class="swatch-hex">#FFFFFF</div></div>
     </div>
   </div>
@@ -330,7 +330,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     <div class="type-row"><div style="font-size:40px;font-weight:700;font-family:Lexend,sans-serif;line-height:1.1">Aa Bb Cc 123</div><div class="type-meta"><span>700 Bold</span><span>Page titles, hero headings</span></div></div>
     <div class="type-row"><div style="font-size:24px;font-weight:600;font-family:Lexend,sans-serif">Section Heading</div><div class="type-meta"><span>600 SemiBold</span><span>Section titles, card headers</span></div></div>
     <div class="type-row"><div style="font-size:16px;font-weight:400;font-family:Lexend,sans-serif;line-height:1.7">Body text reads clearly even in longer paragraphs. Lexend's letterforms reduce crowding and visual stress for all readers.</div><div class="type-meta"><span>400 Regular</span><span>Body copy, descriptions, table content</span></div></div>
-    <div class="type-row"><div style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#6B7280">Section Label / Overline</div><div class="type-meta"><span>700 Bold · Uppercase · +0.08em tracking</span><span>Category labels, section overlines</span></div></div>
+    <div class="type-row"><div style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#6B7A99">Section Label / Overline</div><div class="type-meta"><span>700 Bold · Uppercase · +0.08em tracking</span><span>Category labels, section overlines</span></div></div>
   </div>
   <div class="callout-warn" style="margin-top:16px"><strong>Weights to use:</strong> 400, 500, 600, 700 only. Do not use 300 (Light) — it fails legibility at small sizes.</div>
 </div>
@@ -350,8 +350,8 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <tr><td class="role">Section Heading</td><td><span class="sz">17px</span></td><td class="wt">700</td><td><span style="font-size:17px;font-weight:700;font-family:Lexend,sans-serif">Today's Sessions</span></td></tr>
       <tr><td class="role">Card Title / Label</td><td><span class="sz">15px</span></td><td class="wt">600</td><td><span style="font-size:15px;font-weight:600;font-family:Lexend,sans-serif">Crisis Alerts</span></td></tr>
       <tr><td class="role">Body / Table</td><td><span class="sz">14px</span></td><td class="wt">400</td><td><span style="font-size:14px;font-family:Lexend,sans-serif">Tan Ah Kow · Individual · Video</span></td></tr>
-      <tr><td class="role">Supporting / Nav</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7280">3 confirmed · 5 pending</span></td></tr>
-      <tr><td class="role">Caption / Overline</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#6B7280">INSIGHTS</span></td></tr>
+      <tr><td class="role">Supporting / Nav</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7A99">3 confirmed · 5 pending</span></td></tr>
+      <tr><td class="role">Caption / Overline</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#6B7A99">INSIGHTS</span></td></tr>
       <tr><td class="role">Stat Number</td><td><span class="sz">26px</span></td><td class="wt">700</td><td><span style="font-size:26px;font-weight:700;font-family:Lexend,sans-serif;color:#3D72E8">34</span></td></tr>
     </tbody></table>
   </div>
@@ -364,21 +364,21 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <tr><td class="role">Section Heading</td><td><span class="sz">18px</span></td><td class="wt">700</td><td><span style="font-size:18px;font-weight:700;font-family:Lexend,sans-serif">Health Progress</span></td></tr>
       <tr><td class="role">Card Title</td><td><span class="sz">16px</span></td><td class="wt">600</td><td><span style="font-size:16px;font-weight:600;font-family:Lexend,sans-serif">Bingo Challenge</span></td></tr>
       <tr><td class="role">Body</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif">Client: Rizky Pratama</span></td></tr>
-      <tr><td class="role">Supporting / Meta</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7280">22 Oct 2024 · 09:00 AM</span></td></tr>
-      <tr><td class="role">Badge / Tab label</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;background:#E8F5E9;color:#2E7D32;padding:2px 8px;border-radius:20px">Confirmed</span></td></tr>
+      <tr><td class="role">Supporting / Meta</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7A99">22 Oct 2024 · 09:00 AM</span></td></tr>
+      <tr><td class="role">Badge / Tab label</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;background:#E6F9F2;color:#2DAF7B;padding:2px 8px;border-radius:20px">Confirmed</span></td></tr>
     </tbody></table>
   </div>
 
   <!-- Mobile Senior -->
   <div style="margin-bottom:28px">
-    <div class="platform-pill" style="background:#FFF3E0"><i class="ph-fill ph-device-mobile" style="color:#E07820"></i>Mobile — Senior (Elderly users)</div>
+    <div class="platform-pill" style="background:#FFF3E8"><i class="ph-fill ph-device-mobile" style="color:#E07820"></i>Mobile — Senior (Elderly users)</div>
     <table class="ft"><thead><tr><th>Role</th><th>Size</th><th>Weight</th><th>Live preview</th></tr></thead><tbody>
       <tr><td class="role">Page Title</td><td><span class="sz">28px</span></td><td class="wt">700</td><td><span style="font-size:28px;font-weight:700;font-family:Lexend,sans-serif">Topics</span></td></tr>
       <tr><td class="role">Section Heading</td><td><span class="sz">22px</span></td><td class="wt">700</td><td><span style="font-size:22px;font-weight:700;font-family:Lexend,sans-serif">Good morning, Margaret</span></td></tr>
       <tr><td class="role">Card Title</td><td><span class="sz">18px</span></td><td class="wt">600</td><td><span style="font-size:18px;font-weight:600;font-family:Lexend,sans-serif">Talk to Someone</span></td></tr>
       <tr><td class="role">Body</td><td><span class="sz">17px</span></td><td class="wt">400</td><td><span style="font-size:17px;font-family:Lexend,sans-serif">Chat with Ava or a counsellor</span></td></tr>
-      <tr><td class="role">Supporting</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif;color:#6B7280">How can we support you today?</span></td></tr>
-      <tr><td class="role">Badge / Tab label</td><td><span class="sz">13px</span></td><td class="wt">700 / 500</td><td><span style="font-size:13px;font-weight:700;font-family:Lexend,sans-serif;background:#E8F5E9;color:#2E7D32;padding:3px 10px;border-radius:20px">Confirmed</span></td></tr>
+      <tr><td class="role">Supporting</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif;color:#6B7A99">How can we support you today?</span></td></tr>
+      <tr><td class="role">Badge / Tab label</td><td><span class="sz">13px</span></td><td class="wt">700 / 500</td><td><span style="font-size:13px;font-weight:700;font-family:Lexend,sans-serif;background:#E6F9F2;color:#2DAF7B;padding:3px 10px;border-radius:20px">Confirmed</span></td></tr>
     </tbody></table>
   </div>
 
@@ -390,19 +390,19 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <tr><td class="role">Section Heading</td><td><span class="sz">20px</span></td><td class="wt">700</td><td><span style="font-size:20px;font-weight:700;font-family:Lexend,sans-serif">Daily Schedule</span></td></tr>
       <tr><td class="role">Card Title / Tab</td><td><span class="sz">16px</span></td><td class="wt">600</td><td><span style="font-size:16px;font-weight:600;font-family:Lexend,sans-serif">Medication</span></td></tr>
       <tr><td class="role">Body / Table</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif">Ward 2, Bed 9</span></td></tr>
-      <tr><td class="role">Supporting</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7280">Morning Activity</span></td></tr>
+      <tr><td class="role">Supporting</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7A99">Morning Activity</span></td></tr>
     </tbody></table>
   </div>
 
   <!-- Tablet Senior -->
   <div style="margin-bottom:28px">
-    <div class="platform-pill" style="background:#FFF3E0"><i class="ph-fill ph-device-tablet" style="color:#E07820"></i>Tablet — Senior</div>
+    <div class="platform-pill" style="background:#FFF3E8"><i class="ph-fill ph-device-tablet" style="color:#E07820"></i>Tablet — Senior</div>
     <table class="ft"><thead><tr><th>Role</th><th>Size</th><th>Weight</th><th>Live preview</th></tr></thead><tbody>
       <tr><td class="role">Page Title</td><td><span class="sz">30px</span></td><td class="wt">700</td><td><span style="font-size:30px;font-weight:700;font-family:Lexend,sans-serif">Activities</span></td></tr>
       <tr><td class="role">Section Heading</td><td><span class="sz">24px</span></td><td class="wt">700</td><td><span style="font-size:24px;font-weight:700;font-family:Lexend,sans-serif">Entertainment</span></td></tr>
       <tr><td class="role">Card Title</td><td><span class="sz">20px</span></td><td class="wt">600</td><td><span style="font-size:20px;font-weight:600;font-family:Lexend,sans-serif">Home Messages</span></td></tr>
       <tr><td class="role">Body</td><td><span class="sz">18px</span></td><td class="wt">400</td><td><span style="font-size:18px;font-family:Lexend,sans-serif">Your upcoming schedule</span></td></tr>
-      <tr><td class="role">Supporting</td><td><span class="sz">16px</span></td><td class="wt">400</td><td><span style="font-size:16px;font-family:Lexend,sans-serif;color:#6B7280">9:00 AM – 10:30 AM</span></td></tr>
+      <tr><td class="role">Supporting</td><td><span class="sz">16px</span></td><td class="wt">400</td><td><span style="font-size:16px;font-family:Lexend,sans-serif;color:#6B7A99">9:00 AM – 10:30 AM</span></td></tr>
     </tbody></table>
   </div>
 
@@ -414,7 +414,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <tr><td class="role">Section Heading</td><td><span class="sz">28px</span></td><td class="wt">700</td><td><span style="font-size:28px;font-weight:700;font-family:Lexend,sans-serif">Activities</span></td></tr>
       <tr><td class="role">Card Title</td><td><span class="sz">24px</span></td><td class="wt">700</td><td><span style="font-size:24px;font-weight:700;font-family:Lexend,sans-serif">Art &amp; Craft Class</span></td></tr>
       <tr><td class="role">Body</td><td><span class="sz">20px</span></td><td class="wt">400</td><td><span style="font-size:20px;font-family:Lexend,sans-serif">22 Mar – 22 Apr</span></td></tr>
-      <tr><td class="role">Supporting / Meta</td><td><span class="sz">18px</span></td><td class="wt">400</td><td><span style="font-size:18px;font-family:Lexend,sans-serif;color:#6B7280">Venue: Art Room 3</span></td></tr>
+      <tr><td class="role">Supporting / Meta</td><td><span class="sz">18px</span></td><td class="wt">400</td><td><span style="font-size:18px;font-family:Lexend,sans-serif;color:#6B7A99">Venue: Art Room 3</span></td></tr>
       <tr><td class="role">Instruction (landing)</td><td><span class="sz">22px</span></td><td class="wt">600</td><td><span style="font-size:22px;font-weight:600;font-family:Lexend,sans-serif;color:#3D72E8">Scan your NRIC to get started</span></td></tr>
     </tbody></table>
   </div>
@@ -460,11 +460,11 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <div class="spec-row"><span class="spec-key">Cards — Senior &amp; Kiosk</span><span class="spec-val">18–20px</span></div>
       <div class="spec-row"><span class="spec-key">Avatars / profile photos</span><span class="spec-val">50%</span></div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-        <div class="rd-box" style="border-radius:8px"><span>8px</span><span style="font-size:9px;color:#6B7280">Admin sm</span></div>
-        <div class="rd-box" style="border-radius:14px"><span>14px</span><span style="font-size:9px;color:#6B7280">Admin card</span></div>
-        <div class="rd-box" style="border-radius:18px"><span>18px</span><span style="font-size:9px;color:#6B7280">Senior card</span></div>
-        <div class="rd-box" style="border-radius:20px;width:58px;height:58px"><span>20px</span><span style="font-size:9px;color:#6B7280">Kiosk</span></div>
-        <div class="rd-box" style="border-radius:50%;width:58px;height:58px"><span>50%</span><span style="font-size:9px;color:#6B7280">Avatar</span></div>
+        <div class="rd-box" style="border-radius:8px"><span>8px</span><span style="font-size:9px;color:#6B7A99">Admin sm</span></div>
+        <div class="rd-box" style="border-radius:14px"><span>14px</span><span style="font-size:9px;color:#6B7A99">Admin card</span></div>
+        <div class="rd-box" style="border-radius:18px"><span>18px</span><span style="font-size:9px;color:#6B7A99">Senior card</span></div>
+        <div class="rd-box" style="border-radius:20px;width:58px;height:58px"><span>20px</span><span style="font-size:9px;color:#6B7A99">Kiosk</span></div>
+        <div class="rd-box" style="border-radius:50%;width:58px;height:58px"><span>50%</span><span style="font-size:9px;color:#6B7A99">Avatar</span></div>
       </div>
     </div>
     <div class="card">
@@ -473,9 +473,9 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <div class="spec-row"><span class="spec-key">Medium (modals, dropdowns)</span><span class="spec-val plain" style="font-size:11px">0 6px 24px rgba(61,114,232,0.13)</span></div>
       <div class="spec-row"><span class="spec-key">Large (bottom sheets)</span><span class="spec-val plain" style="font-size:11px">0 8px 32px rgba(61,114,232,0.16)</span></div>
       <div style="display:flex;gap:16px;margin-top:20px">
-        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 2px 14px rgba(61,114,232,.08);border:1px solid #D0D8EE;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7280;gap:3px"><span>Default</span></div>
-        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(61,114,232,.13);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7280;gap:3px"><span>Medium</span></div>
-        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(61,114,232,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7280;gap:3px"><span>Large</span></div>
+        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 2px 14px rgba(61,114,232,.08);border:1px solid #DDE3F0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7A99;gap:3px"><span>Default</span></div>
+        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(61,114,232,.13);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7A99;gap:3px"><span>Medium</span></div>
+        <div style="width:80px;height:60px;background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(61,114,232,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;color:#6B7A99;gap:3px"><span>Large</span></div>
       </div>
     </div>
   </div>
@@ -689,7 +689,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
               <div style="font-size:9px;color:var(--muted);margin-top:2px">Chat with Ava or a counsellor</div>
             </div>
             <div style="background:#fff;border-radius:14px;padding:12px;box-shadow:0 2px 8px rgba(61,114,232,.08)">
-              <div style="width:24px;height:24px;border-radius:8px;background:#E8F5E9;display:flex;align-items:center;justify-content:center;margin-bottom:7px"><i class="ph-fill ph-users" style="font-size:14px;color:var(--green)"></i></div>
+              <div style="width:24px;height:24px;border-radius:8px;background:#E6F9F2;display:flex;align-items:center;justify-content:center;margin-bottom:7px"><i class="ph-fill ph-users" style="font-size:14px;color:var(--green)"></i></div>
               <div style="font-size:13px;font-weight:600">Community</div>
               <div style="font-size:9px;color:var(--muted);margin-top:2px">Connect with others</div>
             </div>
@@ -1002,7 +1002,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     </div>
     <div class="dont-box"><div class="dd-title" style="color:var(--red)">✗ Colours</div>
       <div class="dd-item">Don't invent new blues — only #3D72E8 and #2D5EC7</div>
-      <div class="dd-item">Don't use pure black #000000 for text — use #2C2C3E</div>
+      <div class="dd-item">Don't use pure black #000000 for text — use #1A2233</div>
       <div class="dd-item">Don't use colour alone to convey status — pair with label</div>
     </div>
   </div>
@@ -1101,19 +1101,19 @@ Use only these values. Do not invent new shades.
 | Primary Dark | #2D5EC7 | Hover / pressed states |
 | Primary Light | #EBF2FF | Active nav bg, chip bg, row highlight |
 | Accent | #E07820 | Rewards, points, highlights |
-| Accent Light | #FFF3E0 | Accent badge backgrounds |
-| Success | #2E7D32 | Confirmed, completed |
-| Success Light | #E8F5E9 | Success badge bg |
-| Danger | #E53935 | Errors, alerts, destructive actions |
-| Danger Light | #FFEBEE | Danger badge bg |
-| Purple | #6B46C1 | AI features, Ava, engagement |
-| Purple Light | #F3E8FF | AI / Ava badge bg |
-| Teal | #00796B | Health data, clinical metrics |
-| Teal Light | #E0F2F1 | Health badge bg |
-| Text | #2C2C3E | All body text and headings |
-| Muted | #6B7280 | Supporting text, labels, placeholders |
-| Background | #F2F2F5 | Page / screen background |
-| Border | #D0D8EE | Card borders, dividers, input borders |
+| Accent Light | #FFF3E8 | Accent badge backgrounds |
+| Success | #2DAF7B | Confirmed, completed |
+| Success Light | #E6F9F2 | Success badge bg |
+| Danger | #E84B3D | Errors, alerts, destructive actions |
+| Danger Light | #FEF0EF | Danger badge bg |
+| Purple | #7B5EA7 | AI features, Ava, engagement |
+| Purple Light | #F0EBF8 | AI / Ava badge bg |
+| Teal | #1A9FAF | Health data, clinical metrics |
+| Teal Light | #E5F6F8 | Health badge bg |
+| Text | #1A2233 | All body text and headings |
+| Muted | #6B7A99 | Supporting text, labels, placeholders |
+| Background | #F4F6FB | Page / screen background |
+| Border | #DDE3F0 | Card borders, dividers, input borders |
 | White | #FFFFFF | Card surfaces, inputs, modals |
 
 Rules:
@@ -1229,7 +1229,7 @@ Never use sharp-cornered (0px radius) containers anywhere.
 ### BADGES & STATUS TAGS
 - Shape: pill (border-radius: 20px)
 - Always pair the semantic colour with its paired light tint as background
-- Example: Confirmed = #2E7D32 text on #E8F5E9 bg; High Risk = #E53935 text on #FFEBEE bg
+- Example: Confirmed = #2DAF7B text on #E6F9F2 bg; High Risk = #E84B3D text on #FEF0EF bg
 
 ---
 
@@ -1249,7 +1249,7 @@ Icon sizes:
 
 Icon colour rules:
 - Active / CTA: white icon on Primary Blue container
-- Inactive: muted (#6B7280) filled icon
+- Inactive: muted (#6B7A99) filled icon
 - Category feature icon: Primary Blue filled icon on Primary Light (#EBF2FF) container
 - Always pair icons with a visible text label on senior and kiosk screens
 
