@@ -12,11 +12,14 @@
   --primary: #3D72E8; --primary-dark: #2D5EC7; --primary-light: #EBF2FF;
   --accent: #E07820; --accent-light: #FFF3E8;
   --green: #2DAF7B; --green-light: #E6F9F2;
+  --success: #2DAF7B; --success-light: #E6F9F2;
   --red: #E84B3D; --red-light: #FEF0EF;
+  --danger: #E84B3D; --danger-light: #FEF0EF;
   --purple: #7B5EA7; --purple-light: #F0EBF8;
   --teal: #1A9FAF; --teal-light: #E5F6F8;
   --text: #1A2233; --muted: #6B7A99; --bg: #F4F6FB;
   --border: #DDE3F0; --white: #FFFFFF;
+  --r: 16px;
 }
 body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text); font-size: 14px; line-height: 1.6; }
 .page-wrap { display: flex; min-height: 100vh; }
@@ -257,6 +260,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
   <a href="#iconography"><i class="ph-fill ph-star"></i>Iconography</a>
   <a href="#imagery"><i class="ph-fill ph-image"></i>Imagery &amp; Illustration</a>
   <div class="sidebar-group">Platforms</div>
+  <a href="#uxpatterns"><i class="ph-fill ph-layout"></i>UX Patterns</a>
   <a href="#mockups"><i class="ph-fill ph-device-mobile"></i>Platform Mockups</a>
   <a href="#platforms"><i class="ph-fill ph-list-checks"></i>Platform Specs</a>
   <a href="#dodont"><i class="ph-fill ph-check-circle"></i>Do's &amp; Don'ts</a>
@@ -360,12 +364,14 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
   <div style="margin-bottom:28px">
     <div class="platform-pill"><i class="ph-fill ph-device-mobile"></i>Mobile — Staff, NOK &amp; Volunteers</div>
     <table class="ft"><thead><tr><th>Role</th><th>Size</th><th>Weight</th><th>Live preview</th></tr></thead><tbody>
-      <tr><td class="role">Page Title</td><td><span class="sz">24px</span></td><td class="wt">700</td><td><span style="font-size:24px;font-weight:700;font-family:Lexend,sans-serif">Appointment</span></td></tr>
-      <tr><td class="role">Section Heading</td><td><span class="sz">18px</span></td><td class="wt">700</td><td><span style="font-size:18px;font-weight:700;font-family:Lexend,sans-serif">Health Progress</span></td></tr>
-      <tr><td class="role">Card Title</td><td><span class="sz">16px</span></td><td class="wt">600</td><td><span style="font-size:16px;font-weight:600;font-family:Lexend,sans-serif">Bingo Challenge</span></td></tr>
-      <tr><td class="role">Body</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif">Client: Rizky Pratama</span></td></tr>
+      <tr><td class="role">Page Title</td><td><span class="sz">24px</span></td><td class="wt">700</td><td><span style="font-size:24px;font-weight:700;font-family:Lexend,sans-serif">Home</span></td></tr>
+      <tr><td class="role">Sub-screen Heading</td><td><span class="sz">16px</span></td><td class="wt">600</td><td><span style="font-size:16px;font-weight:600;font-family:Lexend,sans-serif">Daily Tasks</span></td></tr>
+      <tr><td class="role">Card Title</td><td><span class="sz">16px</span></td><td class="wt">600</td><td><span style="font-size:16px;font-weight:600;font-family:Lexend,sans-serif">Medication Review</span></td></tr>
+      <tr><td class="role">Body</td><td><span class="sz">15px</span></td><td class="wt">400</td><td><span style="font-size:15px;font-family:Lexend,sans-serif">Served breakfast · 08:30am</span></td></tr>
       <tr><td class="role">Supporting / Meta</td><td><span class="sz">13px</span></td><td class="wt">400</td><td><span style="font-size:13px;font-family:Lexend,sans-serif;color:#6B7A99">22 Oct 2024 · 09:00 AM</span></td></tr>
-      <tr><td class="role">Badge / Tab label</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;background:#E6F9F2;color:#2DAF7B;padding:2px 8px;border-radius:20px">Confirmed</span></td></tr>
+      <tr><td class="role">Badge / Status</td><td><span class="sz">11px</span></td><td class="wt">700</td><td><span style="font-size:11px;font-weight:700;font-family:Lexend,sans-serif;background:#E6F9F2;color:#2DAF7B;padding:2px 8px;border-radius:20px">Confirmed</span></td></tr>
+      <tr><td class="role">Section label / Overline</td><td><span class="sz">12px</span></td><td class="wt">700</td><td><span style="font-size:12px;font-weight:700;font-family:Lexend,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#6B7A99">TODAY'S TASKS</span></td></tr>
+      <tr><td class="role">Bottom nav label</td><td><span class="sz">12px</span></td><td class="wt">600</td><td><span style="font-size:12px;font-weight:600;font-family:Lexend,sans-serif;color:#3D72E8">Home</span></td></tr>
     </tbody></table>
   </div>
 
@@ -441,7 +447,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     <div class="spec-row"><span class="spec-key">Tablet — horizontal page padding</span><span class="spec-val">24px</span></div>
     <div class="spec-row"><span class="spec-key">Mobile — horizontal page padding</span><span class="spec-val">16px</span></div>
     <div class="spec-row"><span class="spec-key">Kiosk — horizontal page padding</span><span class="spec-val">20px</span></div>
-    <div class="spec-row"><span class="spec-key">Mobile bottom tab bar height</span><span class="spec-val">60px (staff) · 64px (senior)</span></div>
+    <div class="spec-row"><span class="spec-key">Mobile bottom tab bar height</span><span class="spec-val">66px (staff/NOK) · 64px (senior)</span></div>
     <div class="spec-row"><span class="spec-key">Web Admin left sidebar width</span><span class="spec-val">240px</span></div>
   </div>
 </div>
@@ -456,12 +462,14 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <div style="font-size:13px;font-weight:700;margin-bottom:16px">Border Radius</div>
       <div class="spec-row"><span class="spec-key">Badges, chips</span><span class="spec-val">20px (pill)</span></div>
       <div class="spec-row"><span class="spec-key">Inputs, small elements</span><span class="spec-val">8–10px</span></div>
-      <div class="spec-row"><span class="spec-key">Cards — Admin &amp; Staff</span><span class="spec-val">14px</span></div>
+      <div class="spec-row"><span class="spec-key">Cards — Web Admin</span><span class="spec-val">14px</span></div>
+      <div class="spec-row"><span class="spec-key">Cards — Mobile &amp; Tablet (Staff/NOK)</span><span class="spec-val">16px</span></div>
       <div class="spec-row"><span class="spec-key">Cards — Senior &amp; Kiosk</span><span class="spec-val">18–20px</span></div>
       <div class="spec-row"><span class="spec-key">Avatars / profile photos</span><span class="spec-val">50%</span></div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
         <div class="rd-box" style="border-radius:8px"><span>8px</span><span style="font-size:9px;color:#6B7A99">Admin sm</span></div>
         <div class="rd-box" style="border-radius:14px"><span>14px</span><span style="font-size:9px;color:#6B7A99">Admin card</span></div>
+        <div class="rd-box" style="border-radius:16px"><span>16px</span><span style="font-size:9px;color:#6B7A99">Staff/NOK</span></div>
         <div class="rd-box" style="border-radius:18px"><span>18px</span><span style="font-size:9px;color:#6B7A99">Senior card</span></div>
         <div class="rd-box" style="border-radius:20px;width:58px;height:58px"><span>20px</span><span style="font-size:9px;color:#6B7A99">Kiosk</span></div>
         <div class="rd-box" style="border-radius:50%;width:58px;height:58px"><span>50%</span><span style="font-size:9px;color:#6B7A99">Avatar</span></div>
@@ -539,13 +547,13 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     <div class="demo-row" style="align-items:flex-start"><span class="demo-lbl">Mobile<br><span style="font-size:10px;font-weight:400">Bottom Tab</span></span>
       <div style="display:flex;flex-direction:column;gap:12px">
         <div>
-          <div style="font-size:11px;color:var(--muted);margin-bottom:5px">Staff/NOK — 11px labels</div>
-          <div style="background:#fff;border:1px solid var(--border);border-radius:12px;display:flex;padding:8px 10px;width:280px;justify-content:space-around">
-            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--primary);font-weight:500"><i class="ph-fill ph-calendar-check" style="font-size:20px"></i>Appt</div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted)"><i class="ph-fill ph-users" style="font-size:20px"></i>Clients</div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted)"><i class="ph-fill ph-chart-line" style="font-size:20px"></i>Reports</div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted)"><i class="ph-fill ph-bell" style="font-size:20px"></i>Notif</div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted)"><i class="ph-fill ph-dots-three-circle" style="font-size:20px"></i>More</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:5px">Staff/NOK — 12px/600 labels, 22px icons, 66px height, 3px active top-border</div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:12px;display:flex;padding:10px 10px 8px;width:300px;justify-content:space-around;position:relative">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:600;color:var(--primary);position:relative"><div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:32px;height:3px;background:var(--primary);border-radius:0 0 4px 4px"></div><i class="ph-fill ph-house" style="font-size:22px"></i>Home</div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:600;color:var(--muted)"><i class="ph-fill ph-users" style="font-size:22px"></i>Clients</div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:600;color:var(--muted)"><i class="ph-fill ph-chart-line" style="font-size:22px"></i>Reports</div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:600;color:var(--muted)"><i class="ph-fill ph-bell" style="font-size:22px"></i>Notif</div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;font-weight:600;color:var(--muted)"><i class="ph-fill ph-dots-three-circle" style="font-size:22px"></i>More</div>
           </div>
         </div>
         <div>
@@ -655,6 +663,216 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <div style="font-size:12px;color:var(--text);line-height:1.6;margin-bottom:10px">Flat design · Bold outline (2–3px) · Rounded shapes · Brand palette colours · White/grey-haired characters for senior context</div>
       <div style="font-size:12px;font-weight:600;color:var(--red);margin-bottom:4px">Avoid</div>
       <div style="font-size:12px;color:var(--text);line-height:1.6">3D renders · Overly complex gradients · Tiny details · Anime/cartoon extremes</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ UX PATTERNS ══ -->
+<div class="section" id="uxpatterns">
+  <div class="s-tag">Components</div>
+  <div class="s-title">UX Patterns — Mobile Staff &amp; NOK</div>
+  <div class="s-desc">These are the canonical layout and component patterns used in the Caregiver and NOK apps. When generating screens for staff or NOK users, Claude should follow these exact structures.</div>
+
+  <!-- 1. Page Header -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">1 · Page Header</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">White background. Title on left, icon action buttons on right. Optional subtitle (11px muted) below title. Border-bottom divides from scroll content.</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:390px">
+      <div style="background:var(--white);padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)">
+        <div>
+          <div style="font-size:22px;font-weight:700;color:var(--text);line-height:1.2">Home</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:1px">Tuesday, 2 April</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <div style="width:36px;height:36px;border-radius:50%;border:none;background:var(--bg);display:flex;align-items:center;justify-content:center;position:relative">
+            <i class="ph-fill ph-bell" style="font-size:19px;color:var(--text)"></i>
+            <div style="position:absolute;top:5px;right:5px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:1.5px solid white"></div>
+          </div>
+          <div style="width:36px;height:36px;border-radius:50%;border:none;background:var(--bg);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-magnifying-glass" style="font-size:19px;color:var(--text)"></i></div>
+        </div>
+      </div>
+      <div style="padding:12px 20px;font-size:12px;color:var(--muted)">↑ Page title: <strong>22px/700</strong> · Subtitle: <strong>11px/muted</strong> · Icon buttons: <strong>36×36px, 50% radius</strong> · Notif dot: <strong>8px danger + 1.5px white border</strong></div>
+    </div>
+  </div>
+
+  <!-- 2. Senior Context Bar -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">2 · Senior Context Bar</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Appears above the page header in caregiver and NOK apps. Shows which senior is currently selected. Tap to switch between assigned seniors.</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:390px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 16px;background:var(--white);border-bottom:1px solid var(--border)">
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--primary-light);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-user" style="font-size:15px;color:var(--primary)"></i></div>
+          <div>
+            <div style="font-size:10px;color:var(--muted);font-weight:500;line-height:1">Caring for</div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.2">Pak Ahmad</div>
+          </div>
+        </div>
+        <button style="display:flex;align-items:center;gap:5px;padding:5px 12px;border-radius:20px;border:1.5px solid var(--border);background:var(--white);font-family:'Lexend',sans-serif;font-size:12px;font-weight:600;color:var(--primary);cursor:pointer"><i class="ph-fill ph-arrows-left-right" style="font-size:14px"></i>Switch</button>
+      </div>
+      <div style="padding:10px 16px;font-size:12px;color:var(--muted)">Caption: <strong>10px/500/muted</strong> · Name: <strong>14px/700</strong> · Switch pill: <strong>12px/600/primary, 20px radius, 1.5px border</strong></div>
+    </div>
+  </div>
+
+  <!-- 3. Sub-screen Header (Back navigation) -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">3 · Sub-screen Header (Back navigation)</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Used when drilling into a detail view. Sticky top bar with back button, screen title, and optional right actions.</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:390px">
+      <div style="background:var(--white);padding:14px 18px 12px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)">
+        <div style="width:34px;height:34px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-arrow-left" style="font-size:18px;color:var(--text)"></i></div>
+        <div style="font-size:18px;font-weight:700;flex:1;color:var(--text)">Care Log</div>
+        <div style="width:34px;height:34px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-dots-three-vertical" style="font-size:18px;color:var(--text)"></i></div>
+      </div>
+      <div style="padding:10px 18px;font-size:12px;color:var(--muted)">Back btn: <strong>34×34px, 50% radius, --bg</strong> · Title: <strong>18px/700</strong> · Sticky (position: sticky, top: 0)</div>
+    </div>
+  </div>
+
+  <!-- 4. Segmented Tab Control -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">4 · Segmented Tab Control</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Underline-style tabs (not pill tabs). Tabs flush to screen edge. Active = Primary Blue text + 3px bottom border. Inactive = muted. Used to switch between content sections within a screen.</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:390px">
+      <div style="display:flex;background:var(--white);border-bottom:1px solid var(--border)">
+        <button style="flex:1;padding:13px 8px 11px;border:none;border-bottom:3px solid var(--primary);font-family:'Lexend',sans-serif;font-size:14px;font-weight:600;color:var(--primary);background:transparent;cursor:pointer;margin-bottom:-1px">Overview</button>
+        <button style="flex:1;padding:13px 8px 11px;border:none;border-bottom:3px solid transparent;font-family:'Lexend',sans-serif;font-size:14px;font-weight:600;color:var(--muted);background:transparent;cursor:pointer;margin-bottom:-1px">Timeline</button>
+        <button style="flex:1;padding:13px 8px 11px;border:none;border-bottom:3px solid transparent;font-family:'Lexend',sans-serif;font-size:14px;font-weight:600;color:var(--muted);background:transparent;cursor:pointer;margin-bottom:-1px">Reports</button>
+      </div>
+      <div style="padding:10px 16px;font-size:12px;color:var(--muted)">Tab font: <strong>14px/600</strong> · Active border: <strong>3px solid --primary, margin-bottom:-1px</strong> · No background tint (underline only)</div>
+    </div>
+  </div>
+
+  <!-- 5. Card with Left Accent Border -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">5 · Card with Left Accent Border</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Used for AI summaries, daily care reports, alerts, and other flagged content. Left border uses a semantic colour (primary, success, danger, accent). Body text 14px/400, line-height 1.6.</div>
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:390px">
+      <div style="background:var(--white);border-radius:16px;border:1px solid var(--border);border-left:4px solid var(--primary);overflow:hidden">
+        <div style="display:flex;align-items:center;gap:8px;padding:14px 18px 12px">
+          <div style="width:28px;height:28px;background:var(--primary-light);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-sparkle" style="font-size:14px;color:var(--primary)"></i></div>
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text);flex:1">AI Brief</div>
+          <i class="ph-fill ph-caret-down" style="color:var(--muted);font-size:14px"></i>
+        </div>
+        <div style="padding:0 18px 14px;font-size:14px;line-height:1.6;color:var(--text)">Pak Ahmad had a good morning. Ate full breakfast, completed physio routine independently.</div>
+      </div>
+      <div style="background:var(--white);border-radius:16px;border:1px solid var(--border);border-left:4px solid var(--danger);overflow:hidden;padding:14px 18px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--danger);text-transform:uppercase;margin-bottom:4px">Alert</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text)">BP reading flagged — 145/92</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px">Recorded at 09:15am · Review recommended</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:var(--muted)">Left border: <strong>4px solid</strong> · Use semantic colour (--primary, --danger, --success, --accent) · Header icon box: <strong>28×28px, 8px radius, light-tint bg</strong></div>
+  </div>
+
+  <!-- 6. Gradient Hero Card -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">6 · Gradient Hero Card</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Used for care score summaries, active duty bars, and feature highlights. Coloured gradient fill + coloured shadow. Decorative circle overlays add depth. All text is white.</div>
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:390px">
+      <div style="background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);border-radius:16px;padding:18px;display:flex;align-items:center;gap:14px;box-shadow:0 6px 20px rgba(61,114,232,0.28);position:relative;overflow:hidden">
+        <div style="position:absolute;top:-30px;right:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,0.08)"></div>
+        <div style="width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="ph-fill ph-user-circle" style="font-size:22px;color:#fff"></i></div>
+        <div style="flex:1">
+          <div style="font-size:15px;font-weight:700;color:#fff">Sari Dewi</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.72);margin-top:3px">On duty · 08:00am – 08:00pm</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <div style="width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.18);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-phone" style="font-size:18px;color:#fff"></i></div>
+          <div style="width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.18);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-chat" style="font-size:18px;color:#fff"></i></div>
+        </div>
+      </div>
+      <div style="background:linear-gradient(135deg,#1B9E6E 0%,#2DAF7B 100%);border-radius:16px;padding:18px 20px;box-shadow:0 8px 32px rgba(45,175,123,0.3);position:relative;overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,0.08)"></div>
+        <div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.8);margin-bottom:4px">Care Score</div>
+        <div style="font-size:36px;font-weight:700;color:#fff;line-height:1">88</div>
+        <div style="font-size:16px;font-weight:700;color:#fff;margin-top:6px">Great progress today</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.78);margin-top:4px">All morning tasks completed</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:var(--muted)">Gradient: <strong>135deg, colour → colour-dark</strong> · Shadow: <strong>0 6–8px 20–32px rgba(colour, 0.28–0.35)</strong> · Decorative circle: <strong>rgba(255,255,255,0.08)</strong> · All text white or rgba(255,255,255,0.6–0.8)</div>
+  </div>
+
+  <!-- 7. Bottom Sheet -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">7 · Bottom Sheet / Action Sheet</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Slides up from the bottom of the screen for contextual actions (e.g. senior switcher, log entry, confirm action). Rounded top corners, drag handle, section title.</div>
+    <div style="max-width:390px">
+      <div style="background:var(--white);border-radius:20px 20px 0 0;border:1px solid var(--border);overflow:hidden">
+        <div style="width:36px;height:4px;border-radius:2px;background:var(--border);margin:12px auto 4px"></div>
+        <div style="font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:8px 20px 14px;border-bottom:1px solid var(--border)">Select Senior</div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--border)">
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--primary-light);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--primary)">PA</div>
+          <div style="flex:1"><div style="font-size:15px;font-weight:700;color:var(--text)">Pak Ahmad</div><div style="font-size:11px;color:var(--muted)">Morning shift · Ward 2</div></div>
+          <i class="ph-fill ph-check-circle" style="font-size:18px;color:var(--primary)"></i>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 20px">
+          <div style="width:40px;height:40px;border-radius:50%;background:var(--purple-light);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--purple)">IN</div>
+          <div style="flex:1"><div style="font-size:15px;font-weight:700;color:var(--text)">Ibu Nani</div><div style="font-size:11px;color:var(--muted)">Afternoon shift · Ward 3</div></div>
+          <i class="ph ph-check-circle" style="font-size:18px;color:var(--border)"></i>
+        </div>
+      </div>
+      <div style="margin-top:10px;font-size:12px;color:var(--muted)">Top radius: <strong>20px 20px 0 0</strong> · Handle: <strong>36×4px, --border, 2px radius</strong> · Title: <strong>13px/700, uppercase, +0.06em</strong> · Animation: <strong>translateY(100%) → translateY(0), cubic-bezier(.4,0,.2,1) 0.3s</strong></div>
+    </div>
+  </div>
+
+  <!-- 8. Snapshot / Quick-access Cards (scrollable row) -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">8 · Snapshot Cards (Scrollable Row)</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Compact scrollable cards for quick access to care categories. Fixed width (88px), centred icon in tint box, label below, status badge at bottom. Scroll horizontally on mobile.</div>
+    <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;max-width:390px">
+      <div style="flex-shrink:0;width:88px;background:var(--white);border-radius:16px;border:1px solid var(--border);padding:16px 8px 14px;display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="width:40px;height:40px;border-radius:12px;background:var(--success-light);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-fork-knife" style="font-size:20px;color:var(--success)"></i></div>
+        <div style="font-size:12px;font-weight:600;color:var(--text);text-align:center;line-height:1.3">Meals</div>
+        <span style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--success);color:#fff">Good</span>
+      </div>
+      <div style="flex-shrink:0;width:88px;background:var(--white);border-radius:16px;border:1px solid var(--border);padding:16px 8px 14px;display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="width:40px;height:40px;border-radius:12px;background:var(--accent-light);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-pill" style="font-size:20px;color:var(--accent)"></i></div>
+        <div style="font-size:12px;font-weight:600;color:var(--text);text-align:center;line-height:1.3">Meds</div>
+        <span style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--accent);color:#fff">Due</span>
+      </div>
+      <div style="flex-shrink:0;width:88px;background:var(--white);border-radius:16px;border:1px solid var(--border);padding:16px 8px 14px;display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="width:40px;height:40px;border-radius:12px;background:var(--teal-light);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-heartbeat" style="font-size:20px;color:var(--teal)"></i></div>
+        <div style="font-size:12px;font-weight:600;color:var(--text);text-align:center;line-height:1.3">Vitals</div>
+        <span style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--primary-light);color:var(--primary)">Logged</span>
+      </div>
+      <div style="flex-shrink:0;width:88px;background:var(--white);border-radius:16px;border:1px solid var(--border);padding:16px 8px 14px;display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="width:40px;height:40px;border-radius:12px;background:var(--purple-light);display:flex;align-items:center;justify-content:center"><i class="ph-fill ph-smiley" style="font-size:20px;color:var(--purple)"></i></div>
+        <div style="font-size:12px;font-weight:600;color:var(--text);text-align:center;line-height:1.3">Mood</div>
+        <span style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:var(--success-light);color:var(--success)">Happy</span>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:12px;color:var(--muted)">Card: <strong>88px wide, 16px radius, 16px 8px 14px padding</strong> · Icon box: <strong>40×40px, 12px radius, light-tint bg</strong> · Icon: <strong>20px</strong> · Label: <strong>12px/600</strong> · Status: <strong>11px/700, pill</strong></div>
+  </div>
+
+  <!-- 9. SOS / Emergency Button -->
+  <div class="card" style="margin-bottom:16px">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">9 · SOS / Emergency Button</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Appears in the page header, right side. Outlined pill — transparent background with danger-colour border. Never filled red (filled buttons are for CTAs, not emergency triggers in a header).</div>
+    <button style="height:32px;padding:0 12px;border-radius:20px;background:transparent;border:1.5px solid var(--danger);color:var(--danger);font-family:'Lexend',sans-serif;font-size:11px;font-weight:700;letter-spacing:.04em;cursor:pointer;display:flex;align-items:center;gap:4px"><i class="ph-fill ph-warning" style="font-size:13px"></i>SOS</button>
+    <div style="margin-top:10px;font-size:12px;color:var(--muted)">Height: <strong>32px</strong> · Radius: <strong>20px</strong> · Border: <strong>1.5px solid --danger</strong> · Text: <strong>11px/700, +0.04em tracking</strong> · Background: <strong>transparent</strong></div>
+  </div>
+
+  <!-- 10. Scroll Content Area -->
+  <div class="card">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px">10 · Scroll Content Area</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:12px">The scrollable body of every mobile screen. Sections are separated by a <code style="font-family:monospace;background:var(--bg);padding:1px 5px;border-radius:4px">section-label</code> overline + card(s). Gap between major content blocks is 24px. Bottom padding (100px) clears the tab bar.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px">
+      <div style="background:var(--bg);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:var(--text);margin-bottom:4px">Scroll content</div>
+        <div style="color:var(--muted)">padding: 20px 18px 100px<br>gap: 24px (between blocks)</div>
+      </div>
+      <div style="background:var(--bg);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:var(--text);margin-bottom:4px">Section label overline</div>
+        <div style="color:var(--muted)">11px / 700 / uppercase<br>+0.08em tracking / --muted</div>
+      </div>
+      <div style="background:var(--bg);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:var(--text);margin-bottom:4px">Card padding</div>
+        <div style="color:var(--muted)">16px (base token)<br>radius: 16px (--r)</div>
+      </div>
+      <div style="background:var(--bg);border-radius:10px;padding:12px">
+        <div style="font-weight:700;color:var(--text);margin-bottom:4px">Horizontal page padding</div>
+        <div style="color:var(--muted)">18px left/right<br>(slightly tighter than xl=24)</div>
+      </div>
     </div>
   </div>
 </div>
@@ -937,9 +1155,11 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
     <div class="plat-card">
       <div class="plat-head"><div class="plat-icon" style="background:var(--primary-light)"><i class="ph-fill ph-device-mobile" style="color:var(--primary)"></i></div><div><div class="plat-name">Mobile — Staff &amp; NOK</div><div class="plat-sub">iOS &amp; Android · Normal adults</div></div></div>
       <div class="plat-body">
-        <div class="spec-row"><span class="spec-key">Layout</span><span class="spec-val plain">Bottom tab bar (5 items)</span></div>
+        <div class="spec-row"><span class="spec-key">Layout</span><span class="spec-val plain">Bottom tab bar (5 items max)</span></div>
         <div class="spec-row"><span class="spec-key">Base font</span><span class="spec-val">15px</span></div>
-        <div class="spec-row"><span class="spec-key">Card radius</span><span class="spec-val">14px</span></div>
+        <div class="spec-row"><span class="spec-key">Card radius</span><span class="spec-val">16px (--r)</span></div>
+        <div class="spec-row"><span class="spec-key">Tab bar height</span><span class="spec-val">66px</span></div>
+        <div class="spec-row"><span class="spec-key">Nav label / icons</span><span class="spec-val">12px / 600 · 22px icons</span></div>
         <div class="spec-row"><span class="spec-key">Min touch target</span><span class="spec-val">44×44px</span></div>
       </div>
     </div>
@@ -1049,8 +1269,8 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
       <div style="font-size:12px;color:var(--muted);margin-top:3px">Questions on design decisions? Contact the design lead before deviating from these guidelines.</div>
     </div>
     <div style="text-align:right;font-size:12px;color:var(--muted)">
-      <div style="display:inline-block;background:var(--primary);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">v1.0</div>
-      <div style="margin-top:5px">March 2026</div>
+      <div style="display:inline-block;background:var(--primary);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">v1.1</div>
+      <div style="margin-top:5px">April 2026</div>
     </div>
   </div>
 </div>
@@ -1069,7 +1289,7 @@ body { font-family: 'Lexend', sans-serif; background: #ECEEF4; color: var(--text
         <div style="width:10px;height:10px;border-radius:50%;background:#FEBC2E"></div>
         <div style="width:10px;height:10px;border-radius:50%;background:#28C840"></div>
       </div>
-      <div style="font-size:11px;color:rgba(255,255,255,.4);font-family:monospace">CaritaHub Brand Prompt · v1.0</div>
+      <div style="font-size:11px;color:rgba(255,255,255,.4);font-family:monospace">CaritaHub Brand Prompt · v1.1</div>
       <button onclick="copyPrompt()" id="copyBtn" style="background:rgba(61,114,232,.3);border:1px solid rgba(61,114,232,.5);color:#7EB3FF;font-family:'Lexend',sans-serif;font-size:11px;font-weight:600;padding:5px 14px;border-radius:6px;cursor:pointer;display:flex;align-items:center;gap:5px;transition:.15s">
         <i class="ph-fill ph-copy" style="font-size:13px"></i> Copy prompt
       </button>
@@ -1140,11 +1360,13 @@ Rules:
 
 **Mobile — Staff, NOK & Volunteers**
 - Page title: 24px / 700
-- Section heading: 18px / 700
+- Sub-screen heading: 16px / 600
 - Card title: 16px / 600
 - Body: 15px / 400
 - Supporting / meta: 13px / 400
-- Badge / tab label: 11px / 700
+- Badge / status: 11px / 700
+- Section label / overline: 12px / 700, uppercase, +0.06em tracking
+- Bottom nav label: 12px / 600
 
 **Mobile — Senior** (use these larger sizes — do not apply staff sizes to senior screens)
 - Page title: 28px / 700
@@ -1211,7 +1433,7 @@ Never use sharp-cornered (0px radius) containers anywhere.
 
 ### NAVIGATION PATTERNS
 - **Web Admin & Tablet Staff**: Left sidebar, 240px wide. Active item = Primary Light bg + Primary Blue text + filled icon.
-- **Mobile — Staff / NOK**: Bottom tab bar, max 5 items, 60px height, 11px labels, 20–22px icons.
+- **Mobile — Staff / NOK**: Bottom tab bar, max 5 items, 66px height, 12px/600 labels, 22px icons. Active item = Primary Blue text + 3px top border (32px wide, rounded bottom corners). Inactive = muted.
 - **Mobile — Senior**: Bottom tab bar, max 4 items, 64px height, 13px labels, 26–28px icons.
 - **Kiosk**: Top row of icon buttons (64×64px min containers, 14px radius). Active = Primary Blue (#3D72E8) background + white icon. Inactive = white background + dark icon + Border border.
 
@@ -1290,6 +1512,77 @@ Do NOT use emoji as icons in any UI screen.
 
 ---
 
+### UX PATTERNS — MOBILE STAFF & NOK
+
+**Screen structure (top to bottom):**
+1. Status bar (44px, white bg, 15px/700 time)
+2. Senior context bar — shows active senior name (10px caption + 14px/700 name) with switch button (12px/600, 20px radius, 1.5px border)
+3. Page header — white bg, 16px 20px padding, 24px/700 title + 11px/muted subtitle, icon buttons (36×36px, 50% radius, --bg fill) on right, 1px border-bottom
+4. Scrollable content — padding: 20px 18px 100px, gap: 24px between sections
+5. Bottom nav — 66px height, white bg, 1px border-top
+
+**Page header icon buttons:**
+- Size: 36×36px, border-radius: 50%, background: --bg
+- Icon: 19px
+- Notification dot: 8px circle, --danger colour, 1.5px white border (position: absolute top-right)
+
+**SOS / Emergency button (in header):**
+- Height: 32px, border-radius: 20px
+- Style: transparent bg, 1.5px solid --danger border, --danger text
+- Font: 11px / 700 / +0.04em letter-spacing
+
+**Sub-screen back-navigation header:**
+- Back button: 34×34px, 50% radius, --bg fill, 18px arrow icon
+- Title: 16px / 600
+- Position: sticky top:0, z-index:10
+
+**Section label / overline:**
+- 12px / 700 / uppercase / +0.06–0.08em letter-spacing / --muted colour
+- Appears above each content group
+
+**Segmented tab control (within-screen tabs):**
+- Font: 14px / 600
+- Active: --primary text + 3px solid --primary bottom border
+- Inactive: --muted text, transparent border
+- No background fill — underline style only
+
+**Card with left accent border:**
+- border-left: 4px solid [semantic colour]
+- Use for AI summaries, alerts, care reports
+- Header icon box: 28×28px, 8px radius, light-tint background
+
+**Gradient hero card:**
+- background: linear-gradient(135deg, colour, colour-dark)
+- box-shadow: 0 6–8px 20–32px rgba(colour, 0.28–0.35)
+- Decorative circle: position:absolute, rgba(255,255,255,0.08), border-radius:50%
+- All text white or rgba(255,255,255,0.6–0.8)
+
+**Snapshot / quick-access cards (scrollable row):**
+- Card: 88px wide, 16px radius, padding: 16px 8px 14px, centred layout
+- Icon box: 40×40px, 12px radius, light-tint bg, 20px icon
+- Label: 12px / 600, centred
+- Status pill at bottom: 11px / 700
+
+**Bottom sheet / action sheet:**
+- border-radius: 20px 20px 0 0
+- Drag handle: 36×4px, --border colour, 2px radius, centred
+- Section title: 13px / 700 / uppercase / +0.06em
+- Entry rows: 14–15px padding, avatar + name + check icon pattern
+- Animation: translateY(100%) → translateY(0), cubic-bezier(.4,0,.2,1) 0.3s
+
+**Avatar initials:**
+- Default: 48px diameter, 50% radius, gradient bg (--primary to --teal), 17px/700 white initials
+- Large: 64px, 22px initials
+- Small (context bar): 28px
+
+**Card globals (mobile app):**
+- background: --white
+- border-radius: 16px (use --r token)
+- border: 1px solid --border
+- padding: 16px
+
+---
+
 ### DO NOT
 - Use any typeface other than Lexend
 - Invent new shades of blue — only #3D72E8 and #2D5EC7
@@ -1297,7 +1590,9 @@ Do NOT use emoji as icons in any UI screen.
 - Use more than one Primary button per screen view
 - Use pure black (#000000) for any text
 - Use the same font sizes for senior and staff screens
-- Use hover-only interactions on touch platforms</pre>
+- Use hover-only interactions on touch platforms
+- Use pill-style tabs for within-screen navigation on staff/NOK — use underline tabs
+- Use a filled red/danger button for SOS in the header — use the outlined pill style</pre>
   </div>
 
   <div style="margin-top:14px;padding:14px 18px;background:var(--bg);border-radius:10px;font-size:12px;color:var(--muted);display:flex;align-items:flex-start;gap:10px">
